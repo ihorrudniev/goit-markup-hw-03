@@ -1,0 +1,209 @@
+:root {
+  --main-color: #ffffff;
+  --conteiner-bg-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --title-color: #212121;
+  --logo-color: #000000;
+  --button-bg-color: #188ce8;
+}
+
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--main-color);
+}
+/* скрытие текста */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+/* логотип */
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+
+.logo-header {
+  color: var(--accent-color);
+}
+
+/* навигация сайта */
+
+.site-nav .link {
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* баннер Герой */
+
+.hero-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.conteiner {
+  background-color: var(--conteiner-bg-color);
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.bottom:focus {
+  background-color: var(--button-bg-color);
+}
+
+/* Особенности студии */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.list-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+/* Наша команда */
+.tiam {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: none;
+}
+
+.container-tiam {
+  background-color: var(--secondary-background-color);
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+}
+
+.logo-footer {
+  color: var(--main-color);
+}
+
+.contacts {
+  font-style: normal;
+  color: var(--main-color);
+}
+
+.contacts .link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*------------ portfolio page------------- */
+
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
+.button-portfolio.current,
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+}
+
+.link .title-card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  text-transform: none;
+}
+.text-card {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--main-text-color);
+}
