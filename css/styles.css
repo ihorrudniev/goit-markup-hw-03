@@ -74,9 +74,7 @@ img {
   text-decoration: none;
   color: var(--main-text-color);
 }
-.page-header {
-  display: flex;
-  align-items: center;
+.header {
   border-bottom: 1px solid var(--border-bottom-header);
 }
 
@@ -88,7 +86,12 @@ img {
   margin-left: auto;
 }
 
-.page-header .container {
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -113,7 +116,7 @@ img {
 
 /*--------- навигация сайта---------- */
 
-.page-header .item {
+.page-header .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -174,14 +177,12 @@ img {
 /* ---------баннер Герой---------- */
 
 .hero {
-  /* height: 600px; */
-  min-height: 100vh;
   text-align: center;
 }
 .hero-title {
   margin-bottom: 30px;
   margin: auto;
-  padding-top: 200px;
+
   width: 696px;
 
   font-family: Roboto, sans-serif;
@@ -197,7 +198,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.section.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .section.hero,
 .section.footer {
   background-color: var(--container-bg-color);
@@ -205,7 +209,6 @@ img {
 
 .button {
   margin-top: 30px;
-  margin-bottom: 200px;
 
   font-weight: 700;
   font-size: 16px;
@@ -249,7 +252,7 @@ img {
 }
 
 .list-item {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -259,6 +262,10 @@ img {
 }
 
 /*-------- Чем мы занимаемся-------- */
+
+.section-work {
+  padding-bottom: 94px;
+}
 
 .work {
   display: flex;
@@ -279,9 +286,8 @@ img {
 }
 
 .card-members {
-  max-width: 270px;
-  max-height: 368px;
-  padding-bottom: 30px;
+  width: 270px;
+
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -291,11 +297,9 @@ img {
   margin-right: 30px;
 }
 
-.card-img {
-  padding-bottom: 30px;
-}
-
 .card-text {
+  padding: 30px 59px;
+
   text-align: center;
 }
 
@@ -340,6 +344,8 @@ img {
   justify-content: center;
 }
 .btn {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -418,12 +424,14 @@ ul.card-set {
   margin-bottom: 20px;
 }
 
-.auth-nav-item {
+.auth-nav-item:not(:first-child) {
   margin-top: 9px;
 }
 
 .footer .auth-nav {
   flex-direction: column;
+
+  margin-top: 9px;
 }
 
 /* ------страница портфоолио------------- */
